@@ -1,0 +1,19 @@
+# 1. WORKFLOW IDENTITY
+name: push into the main CI-CD Pipeline
+run-name: Checkout and print the message. Triggered by ${{ github.actor }}
+
+# 2. TRIGGER EVENTS
+on:
+  push:
+    branches: [ "main" ]
+
+# 4. JOBS AND STEPS
+jobs:
+  checkout-and-print:
+ 
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Print the message
+        run: echo "Hello, CI with GitHub Actions!"
