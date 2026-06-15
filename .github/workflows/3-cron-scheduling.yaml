@@ -10,7 +10,7 @@ on:
 
 # 4. JOBS AND STEPS
 jobs:
-  run-tests:
+  run-daily-checkout:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
