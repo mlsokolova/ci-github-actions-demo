@@ -1,0 +1,20 @@
+# 1. WORKFLOW IDENTITY
+name: Dayly code checkout
+run-name: Dayly code checkout triggered by ${{ github.triggering_actor }}
+
+# 2. TRIGGER EVENTS
+on:
+  schedule:
+    - cron: '10 * * * *' 
+      timezone: "Asia/Jerusalem"
+
+# 4. JOBS AND STEPS
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Print the message
+        run: echo "Scheduled build completed successfully!"
