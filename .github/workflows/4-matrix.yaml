@@ -10,11 +10,10 @@ on:
 # 4. JOBS AND STEPS
 jobs:
   run-matrix-tests:
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-22.04
     strategy: 
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
-        python-version: [3.7, 3.8, 3.9] # 3.7 does not exists for ubuntu 24.04
+        python-version: [3.7, 3.8, 3.9] # 3.7 does not exists for ubuntu latest v.24.04
       fail-fast: false # to prevent the workflow from stopping after the first failure in the matrix
     name: Run tests on Python v.${{ matrix.python-version }}
     steps:
