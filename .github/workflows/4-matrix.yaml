@@ -1,6 +1,6 @@
 # 1. WORKFLOW IDENTITY
-name: Run tests
-run-name: Run tests. Triggered by ${{ github.actor }}
+name: Run matrix tests
+run-name: Run matrix tests. Triggered by ${{ github.actor }}
 
 # 2. TRIGGER EVENTS
 on:
@@ -13,8 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy: 
       matrix:
-        python-version: [3.7, 3.8, 3.9]
-      fail-fast: false
+        python-version: [3.7, 3.7.1, 3.8, 3.9] # 3.7 does not exists for ubuntu 24.04
+      fail-fast: false # to prevent the workflow from stopping after the first failure in the matrix
+    name: Run tests on Python v.${{ matrix.python-version }}
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
