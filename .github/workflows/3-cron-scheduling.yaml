@@ -11,7 +11,7 @@ on:
 # 4. JOBS AND STEPS
 jobs:
   run-daily-checkout:
-    runs-on: rockmachine
+    runs-on: self-hosted
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3

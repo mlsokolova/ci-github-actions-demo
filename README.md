@@ -21,7 +21,8 @@ Current runner version: '2.335.1'
 2026-06-15 14:04:47Z: Listening for Jobs
 
 ```
-
+use the one of labels in the Github Actions workflow to run jobs on self-hosted runner, for example:
+`runs-on: self-hosted`
 
 ## TODO:
 - check what does it mean  
