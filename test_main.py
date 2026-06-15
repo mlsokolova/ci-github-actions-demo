@@ -5,6 +5,7 @@ class TestMain(unittest.TestCase):
 
     def test_get_platform_runtime_info(self):
         info = main.get_platform_runtime_info()
+        print(info)
         self.assertIn("python_version", info)
         self.assertIn("os", info)
         self.assertIn("architecture", info)
