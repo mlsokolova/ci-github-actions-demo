@@ -3,7 +3,7 @@
 
 | File name | Description |
 | --- | --- |
-| `main.py` | Python entry point that collects runtime and platform details (Python version, OS, architecture, kernel, user, IP addresses) and prints them. |
+| `main.py` | Python script that collects runtime and platform details (Python version, OS, architecture, kernel, user, IP addresses) and prints them. |
 | `test_main.py` | Unit tests for `main.py`; verifies that `get_platform_runtime_info()` returns all expected keys. |
 | `.gitignore` | Excludes `__pycache__` directories and `.env` files from version control. |
 | `.github/workflows/1-main-push.yaml` | CI workflow triggered on push to `main`; checks out the repo on a self-hosted runner and prints a hello message. |
