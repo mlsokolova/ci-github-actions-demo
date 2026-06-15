@@ -29,7 +29,7 @@ Run:
 `./config.sh --url https://github.com/mlsokolova/ci-github-actions-demo --name myrunner --runnergroup  Default  --labels self-hosted --work  _work --token you_token`
 
 ### Run the runner
-`./run.sh`
+`./run.sh`  
 Expect output like this:
 
 ```
