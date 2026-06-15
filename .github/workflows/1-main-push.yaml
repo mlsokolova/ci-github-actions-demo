@@ -13,6 +13,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Checkout the code
+        # old version, get "Warning: Node.js 20 actions are deprecated."
         uses: actions/checkout@v3
 
       - name: Print the message
