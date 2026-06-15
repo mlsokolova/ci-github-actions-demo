@@ -9,14 +9,11 @@ on:
 
 # 4. JOBS AND STEPS
 jobs:
-  checkout-and-print:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
-
-      - name: get env variables
-        run: env
 
       - name: Print the message
         run: echo "Hello, CI with GitHub Actions!"

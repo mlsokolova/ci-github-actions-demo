@@ -19,7 +19,7 @@ def get_platform_runtime_info():
         "platform release": get_platform_release_info(),
         #there is no platform.freedesktop_os_release() in the standard planform library in Python 3.9
         #"platform release": platform.freedesktop_os_release().get("PRETTY_NAME", "N/A"),
-        "region name": os.environ.get("REGION_NAME", "N/A"),
+        "user": os.environ.get("USER", "N/A"),
         "ip_addresses": os.popen("hostname -I").read().strip(),
     }
 
