@@ -6,7 +6,7 @@ run-name: Daily code checkout triggered by ${{ github.triggering_actor }}
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "11 13 * * *"
 
 # 4. JOBS AND STEPS
 jobs:
