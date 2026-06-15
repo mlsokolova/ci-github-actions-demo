@@ -1,6 +1,6 @@
 # 1. WORKFLOW IDENTITY
-name: push into the main CI-CD Pipeline
-run-name: Checkout and print the message. Triggered by ${{ github.actor }}
+name: Run tests
+run-name: Run tests. Triggered by ${{ github.actor }}
 
 # 2. TRIGGER EVENTS
 on:
