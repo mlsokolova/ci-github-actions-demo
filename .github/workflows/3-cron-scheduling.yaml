@@ -11,7 +11,7 @@ on:
 # 4. JOBS AND STEPS
 jobs:
   run-daily-checkout:
-    runs-on: ubuntu-latest
+    runs-on: rockmachine
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
