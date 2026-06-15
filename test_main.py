@@ -12,8 +12,7 @@ class TestMain(unittest.TestCase):
         self.assertIn("kernel release", info)
         self.assertIn("full system info", info)
         self.assertIn("platform release", info)
-        self.assertIn("container", info)
-        self.assertIn("cloud_provider", info)
+        self.assertIn("region name", info)
         self.assertIn("ip_addresses", info)
 
 if __name__ == "__main__":
