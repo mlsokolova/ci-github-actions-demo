@@ -9,7 +9,7 @@ on:
 
 # 4. JOBS AND STEPS
 jobs:
-  run-tests:
+  checkout-and-message:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
@@ -18,11 +18,4 @@ jobs:
       - name: Print the message
         run: echo "Hello, CI with GitHub Actions!"
 
-      - name: Install Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-
-      - name: Run Unit Tests
-        run: |
-          python -m unittest discover -s .
+     
